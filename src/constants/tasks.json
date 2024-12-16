@@ -1,0 +1,92 @@
+{
+  "relaxed": {
+    "id": 1,
+    "quotes": [
+      {
+        "text": "Peace is not the absence of conflict, but the ability to cope with it.",
+        "author": "Unknown"
+      },
+      {
+        "text": "In the midst of movement and chaos, keep stillness inside of you.",
+        "author": "Deepak Chopra"
+      },
+      {"text": "Breathe in peace, breathe out tension.", "author": "Unknown"},
+      {
+        "text": "Relax. You’re not required to set yourself on fire to keep others warm.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Sometimes the most productive thing you can do is relax.",
+        "author": "Mark Black"
+      }
+    ],
+    "tasks": [
+      "Take a few moments to close your eyes and breathe deeply.",
+      "Spend 5 minutes sitting in silence, enjoying the calm around you.",
+      "Write down three things you’re grateful for today.",
+      "Stretch your body for a few minutes to enhance relaxation.",
+      "Find a quiet place and just listen to the calming nature sounds for 10 minutes."
+    ]
+  },
+  "inspired": {
+    "id": 3,
+    "quotes": [
+      {
+        "text": "The best way to predict the future is to create it.",
+        "author": "Abraham Lincoln"
+      },
+      {
+        "text": "Creativity is intelligence having fun.",
+        "author": "Albert Einstein"
+      },
+      {
+        "text": "The only limit to our realization of tomorrow is our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+      },
+      {"text": "Everything you can imagine is real.", "author": "Pablo Picasso"}
+    ],
+    "tasks": [
+      "Set a small, achievable goal for today and take the first step toward it.",
+      "Try brainstorming a new idea for a project, something that excites you.",
+      "Take 10 minutes to write down a list of things you love doing or want to explore.",
+      "Create a vision board (physical or digital) of your dreams and goals.",
+      "Reflect on one of your past successes, and plan how you can replicate that feeling."
+    ]
+  },
+  "stressed": {
+    "id": 2,
+    "quotes": [
+      {
+        "text": "Stress is caused by being 'here' but wanting to be 'there.'",
+        "author": "Eckhart Tolle"
+      },
+      {
+        "text": "You can’t calm the storm… so stop trying. What you can do is calm yourself. The storm will pass.",
+        "author": "Timber Hawkeye"
+      },
+      {
+        "text": "Take a deep breath, and remember: you’ve made it through every tough day so far.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Self-care is not selfish. You cannot serve from an empty vessel.",
+        "author": "Eleanor Brown"
+      },
+      {
+        "text": "The time to relax is when you don’t have time for it.",
+        "author": "Sydney J. Harris"
+      }
+    ],
+    "tasks": [
+      "Take 5 minutes for deep breathing exercises, focusing on your breath.",
+      "Write down what’s stressing you out, and then jot down possible solutions or actions.",
+      "Step away from work or stress triggers for a brief walk outside.",
+      "Call or text a friend to share what’s on your mind.",
+      "Do a quick 5-minute body scan and release any tension you notice."
+    ]
+  }
+}
