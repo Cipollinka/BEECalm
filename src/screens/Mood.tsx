@@ -6,7 +6,7 @@ import {TouchableOpacity, View} from 'react-native';
 import Row from '@/components/layout/Row';
 
 import DayIcon from '@/assets/icons/day.svg';
-import BeeIcon from '@/assets/icons/beeIcon.svg';
+import BeIcon from '@/assets/icons/be.svg';
 import CloudIcon from '@/assets/icons/cloud.svg';
 import {useNavigation} from '@react-navigation/native';
 import {Screens, UseNavigationProp} from '@/types/navigation';
@@ -21,7 +21,7 @@ import {Mood as MoodType} from '@/types';
 
 const arr = [
   {Icon: DayIcon, key: MoodType.RELAXED},
-  {Icon: BeeIcon, key: MoodType.INSPIRED},
+  {Icon: BeIcon, key: MoodType.INSPIRED},
   {Icon: CloudIcon, key: MoodType.STRESSED},
 ];
 

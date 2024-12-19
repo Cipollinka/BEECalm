@@ -34,7 +34,7 @@ export default function Header({disabled}: Props) {
         onPress={() => nav.navigate(Screens.MAIN)}>
         <Image
           source={require('@/assets/images/logotext.png')}
-          style={{width: 162, height: 32}}
+          style={{width: 165, height: 38}}
         />
       </TouchableOpacity>
 

@@ -7,7 +7,7 @@ import Button from '@/components/ui/Button';
 import {useNavigation} from '@react-navigation/native';
 import {Screens, UseNavigationProp} from '@/types/navigation';
 import {useUserStore} from '@/stores/userStore';
-import BeeIcon from '@/assets/icons/bee.svg';
+import BeIcon from '@/assets/icons/be.svg';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Greetings() {
@@ -49,13 +49,15 @@ export default function Greetings() {
             height: 280,
             marginHorizontal: 'auto',
             objectFit: 'contain',
+            marginTop: 50,
+            // paddingTop: 200,
           }}
         />
       </View>
 
-      <View style={{marginTop: 30}} />
+      {/* <View style={{marginTop: 30}} /> */}
       <BottomBlock style={{alignItems: 'center'}}>
-        <BeeIcon />
+        <BeIcon />
 
         <View
           style={{

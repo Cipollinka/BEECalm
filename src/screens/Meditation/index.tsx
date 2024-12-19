@@ -17,7 +17,7 @@ import {useNavigation} from '@react-navigation/native';
 const labelBtKey = {
   [Mood.RELAXED]: 'Morning meditation preset',
   [Mood.INSPIRED]: 'Evening meditation preset',
-  [Mood.STRESSED]: 'BEECALM meditation preset',
+  [Mood.STRESSED]: 'Be Calm meditation preset',
 };
 
 const musicByKey = {

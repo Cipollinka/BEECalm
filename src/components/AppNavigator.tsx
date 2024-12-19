@@ -20,7 +20,7 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName={Screens.MEDITATION}
+        initialRouteName={Screens.GREETINGS}
         screenOptions={{headerShown: false}}>
         <Stack.Screen name={Screens.GREETINGS} component={Greetings} />
         <Stack.Screen

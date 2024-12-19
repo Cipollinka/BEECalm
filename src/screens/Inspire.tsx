@@ -6,7 +6,7 @@ import BottomBlock from '@/components/layout/BottomBlock';
 import Button from '@/components/ui/Button';
 import {useNavigation} from '@react-navigation/native';
 import {Screens, UseNavigationProp} from '@/types/navigation';
-import BeeIcon from '@/assets/icons/bee.svg';
+import BeIcon from '@/assets/icons/be.svg';
 import {useUserStore} from '@/stores/userStore';
 
 export default function GetInspired() {
@@ -27,13 +27,14 @@ export default function GetInspired() {
             height: 280,
             marginHorizontal: 'auto',
             objectFit: 'contain',
+            marginTop: 50,
           }}
         />
       </View>
 
-      <View style={{marginTop: 30}} />
+      {/* <View style={{marginTop: 30}} /> */}
       <BottomBlock style={{alignItems: 'center'}}>
-        <BeeIcon />
+        <BeIcon />
 
         <View
           style={{
