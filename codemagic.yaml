@@ -7,8 +7,8 @@ workflows:
       groups:
         - creds
       vars:
-        XCODE_WORKSPACE: "beecalm.xcworkspace" # <----
-        XCODE_SCHEME: "beecalm" # <----
+        XCODE_WORKSPACE: "be_calm.xcworkspace" # <----
+        XCODE_SCHEME: "be_calm" # <----
         BUNDLE_ID: "com.beecalm.app" # <----
         APP_STORE_APP_ID: 6739493179 # <----
         APP_STORE_CONNECT_KEY_ID: "29U7C7TD3Z" # <----
