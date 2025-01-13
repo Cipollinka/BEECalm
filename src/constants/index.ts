@@ -1,7 +1,7 @@
-import {Mood} from '@/types';
-import InspiredIcon from '@/assets/icons/inspired.svg';
-import RelaxedIcon from '@/assets/icons/relaxed.svg';
-import StressedIcon from '@/assets/icons/stressed.svg';
+import {Mood} from '@/models';
+import InspiredIcon from '@/content/icons/inspired.svg';
+import RelaxedIcon from '@/content/icons/relaxed.svg';
+import StressedIcon from '@/content/icons/stressed.svg';
 
 export const COLORS = {
   '#FE6A60': 'Red',
@@ -60,12 +60,4 @@ export const MOODS = {
     color: '#FF5757',
     label: 'stressed',
   },
-};
-
-export const TOPICS_IMAGES = {
-  1: require('@/assets/images/topics/1.png'),
-  2: require('@/assets/images/topics/2.png'),
-  3: require('@/assets/images/topics/3.png'),
-  4: require('@/assets/images/topics/4.png'),
-  5: require('@/assets/images/topics/5.png'),
 };

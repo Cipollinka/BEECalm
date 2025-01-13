@@ -1,17 +1,17 @@
 import {View, TouchableOpacity, Image, StyleSheet} from 'react-native';
 import React from 'react';
-import Row from './layout/Row';
+import Row from './common/Row';
 import {useNavigation} from '@react-navigation/native';
-import {Screens, UseNavigationProp} from '@/types/navigation';
-import StatisticIcon from '@/assets/icons/statistic.svg';
-import TopicsIcon from '@/assets/icons/topics.svg';
+import {ScreenNames, GlobalNavigationProp} from '@/models/navigation';
+import StatisticIcon from '@/content/icons/statistic.svg';
+import TopicsIcon from '@/content/icons/topics.svg';
 
 interface Props {
   disabled?: boolean;
 }
 
 export default function Header({disabled}: Props) {
-  const nav = useNavigation<UseNavigationProp>();
+  const nav = useNavigation<GlobalNavigationProp>();
 
   return (
     <Row
@@ -23,7 +23,7 @@ export default function Header({disabled}: Props) {
       }}>
       <TouchableOpacity
         disabled={disabled}
-        onPress={() => nav.navigate(Screens.TOPICS_OVERVIEW)}>
+        onPress={() => nav.navigate(ScreenNames.TOPICS_OVERVIEW)}>
         <View style={styles.item}>
           <TopicsIcon />
         </View>
@@ -31,16 +31,16 @@ export default function Header({disabled}: Props) {
 
       <TouchableOpacity
         disabled={disabled}
-        onPress={() => nav.navigate(Screens.MAIN)}>
+        onPress={() => nav.navigate(ScreenNames.MAIN)}>
         <Image
-          source={require('@/assets/images/logotext.png')}
+          source={require('@/content/images/logotext.png')}
           style={{width: 165, height: 38}}
         />
       </TouchableOpacity>
 
       <TouchableOpacity
         disabled={disabled}
-        onPress={() => nav.navigate(Screens.STATISTIC)}>
+        onPress={() => nav.navigate(ScreenNames.STATISTIC)}>
         <View style={styles.item}>
           <StatisticIcon />
         </View>

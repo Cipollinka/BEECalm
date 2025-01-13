@@ -1,13 +1,13 @@
 import {Share, TouchableOpacity, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import Row from './layout/Row';
-import CustomText from './ui/Text';
+import Row from './common/Row';
+import CustomText from './default/Text';
 
-import QuotesIcon from '@/assets/icons/quote.svg';
-import TaskIcon from '@/assets/icons/task.svg';
-import ShareIcon from '@/assets/icons/share.svg';
+import QuotesIcon from '@/content/icons/quote.svg';
+import TaskIcon from '@/content/icons/task.svg';
+import ShareIcon from '@/content/icons/share.svg';
 
-import Button from './ui/Button';
+import Button from './default/Button';
 
 const formatTime = (time: number) => (time < 10 ? `0${time}` : time);
 

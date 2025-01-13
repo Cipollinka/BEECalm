@@ -1,5 +1,5 @@
-import {Mood, MoodIndex} from '@/types';
-import {getPersistStoreOptions} from '@/utils/getPersistStoreOptions';
+import {Mood, MoodIndex} from '@/models';
+import {createPersistStoreConfig} from '@/helper/createPersistStoreConfig';
 import {create} from 'zustand';
 import {persist} from 'zustand/middleware';
 
@@ -107,6 +107,6 @@ export const useUserStore = create(
       },
     }),
 
-    getPersistStoreOptions('user'),
+    createPersistStoreConfig('user'),
   ),
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import AppNavigator from './src/components/AppNavigator';
+import Navigation from './src/components/Navigation';
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
@@ -7,7 +7,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
-      <AppNavigator />
+      <Navigation />
     </SafeAreaProvider>
   );
 }

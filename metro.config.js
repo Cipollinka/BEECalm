@@ -1,27 +1,22 @@
 const path = require('path');
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 
-const defaultConfig = getDefaultConfig(__dirname);
-const {
-  resolver: {sourceExts, assetExts},
-} = defaultConfig;
+const configDefaults = getDefaultConfig(__dirname);
 
-/**
- * Metro configuration
- * https://facebook.github.io/metro/docs/configuration
- *
- * @type {import('metro-config').MetroConfig}
- */
-const config = {
+const modifiedConfig = {
   transformer: {
     babelTransformerPath: require.resolve('react-native-svg-transformer'),
   },
   resolver: {
-    assetExts: assetExts.filter(ext => ext !== 'svg'),
-    sourceExts: [...sourceExts, 'svg'],
+    assetExts: configDefaults.resolver.assetExts.filter(ext => ext !== 'svg'),
+    sourceExts: [...configDefaults.resolver.sourceExts, 'svg'],
     resolverMainFields: ['sbmodern', 'react-native', 'browser', 'main'],
   },
-  watchFolders: [path.resolve(__dirname, '../')],
+  watchFolders: [path.join(__dirname, '../')],
 };
 
-module.exports = mergeConfig(defaultConfig, config);
+/**
+ * Merges the default Metro config with the custom config
+ * @type {import('metro-config').MetroConfig}
+ */
+module.exports = mergeConfig(configDefaults, modifiedConfig);
