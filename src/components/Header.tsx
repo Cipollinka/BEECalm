@@ -4,7 +4,6 @@ import Row from './common/Row';
 import {useNavigation} from '@react-navigation/native';
 import {ScreenNames, GlobalNavigationProp} from '@/models/navigation';
 import StatisticIcon from '@/content/icons/statistic.svg';
-import TopicsIcon from '@/content/icons/topics.svg';
 
 interface Props {
   disabled?: boolean;
@@ -17,18 +16,11 @@ export default function Header({disabled}: Props) {
     <Row
       style={{
         width: '100%',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         marginTop: 50,
         zIndex: 20,
+        position: 'relative',
       }}>
-      <TouchableOpacity
-        disabled={disabled}
-        onPress={() => nav.navigate(ScreenNames.TOPICS_OVERVIEW)}>
-        <View style={styles.item}>
-          <TopicsIcon />
-        </View>
-      </TouchableOpacity>
-
       <TouchableOpacity
         disabled={disabled}
         onPress={() => nav.navigate(ScreenNames.MAIN)}>
@@ -39,6 +31,8 @@ export default function Header({disabled}: Props) {
       </TouchableOpacity>
 
       <TouchableOpacity
+        style={{position: 'absolute', right: 20, top: 2}}
+        // style={{marginLeft: 'auto'}}
         disabled={disabled}
         onPress={() => nav.navigate(ScreenNames.STATISTIC)}>
         <View style={styles.item}>

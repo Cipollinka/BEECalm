@@ -7,13 +7,8 @@ export enum ScreenNames {
 
   MOOD = 'mood',
 
-  MEDITATION = 'meditation',
-  MEDITATION_END = 'meditation_end',
-
   MAIN = 'main',
 
-  TOPICS_OVERVIEW = 'topics',
-  TOPICS_DETAILS = 'topics_details',
   STATISTIC = 'statistic',
 }
 
@@ -22,11 +17,7 @@ export type AppStackParamList = {
   [ScreenNames.AFTER_GREETINGS]: undefined;
   [ScreenNames.INSPIRE]: undefined;
   [ScreenNames.MOOD]: undefined;
-  [ScreenNames.MEDITATION]: {key: string} | undefined;
-  [ScreenNames.MEDITATION_END]: undefined;
   [ScreenNames.MAIN]: undefined;
-  [ScreenNames.TOPICS_OVERVIEW]: undefined;
-  [ScreenNames.TOPICS_DETAILS]: {id: number};
   [ScreenNames.STATISTIC]: undefined;
 };
 

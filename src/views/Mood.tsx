@@ -5,9 +5,6 @@ import MainWrapper from '@/components/common/MainWrapper';
 import {TouchableOpacity, View} from 'react-native';
 import Row from '@/components/common/Row';
 
-import DayIcon from '@/content/icons/day.svg';
-// import InspiredIcon from '@/content/icons/inspired.svg';
-import CloudIcon from '@/content/icons/cloud.svg';
 import {useNavigation} from '@react-navigation/native';
 import {ScreenNames, GlobalNavigationProp} from '@/models/navigation';
 import Button from '@/components/default/Button';
@@ -19,11 +16,11 @@ import StressedIcon from '@/content/icons/stressed.svg';
 
 import {Mood as MoodType} from '@/models';
 
-const arr = [
-  {Icon: DayIcon, key: MoodType.RELAXED},
-  {Icon: RelaxedIcon, key: MoodType.INSPIRED},
-  {Icon: CloudIcon, key: MoodType.STRESSED},
-];
+// const arr = [
+//   {Icon: DayIcon, key: MoodType.RELAXED},
+//   {Icon: RelaxedIcon, key: MoodType.INSPIRED},
+//   {Icon: CloudIcon, key: MoodType.STRESSED},
+// ];
 
 interface MoodButtonProps {
   Icon: any;
@@ -67,9 +64,9 @@ export default function Mood() {
     // setIsAlreadyGreeted(false);
   }, []);
 
-  const handleMeditationPress = (key: string) => {
-    nav.navigate(ScreenNames.MEDITATION, {key});
-  };
+  // const handleMeditationPress = (key: string) => {
+  //   nav.navigate(ScreenNames.MEDITATION, {key});
+  // };
 
   const handleMoodSelect = (key: MoodType) => {
     setCurrentMood(key);
@@ -83,41 +80,7 @@ export default function Mood() {
   };
 
   return (
-    <MainWrapper title="Quick Meditations" navDisabled>
-      <Row
-        style={{
-          justifyContent: 'space-around',
-          width: '90%',
-          marginHorizontal: 'auto',
-          marginTop: 25,
-        }}>
-        {arr.map(({Icon, key}) => (
-          <TouchableOpacity
-            onPress={() => handleMeditationPress(key)}
-            key={key}>
-            <View
-              key={key}
-              style={{
-                backgroundColor: '#ffffff50',
-                padding: 5,
-                borderRadius: 9999,
-              }}>
-              <View
-                style={{
-                  borderRadius: 9999,
-                  backgroundColor: '#fff',
-                  width: 88,
-                  height: 88,
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}>
-                <Icon color="#F9BF2B" />
-              </View>
-            </View>
-          </TouchableOpacity>
-        ))}
-      </Row>
-
+    <MainWrapper title="Select your mood" navDisabled>
       <BottomBlock>
         <View style={{width: '100%', alignItems: 'center'}}>
           <CustomText fw="bold" fs={17}>

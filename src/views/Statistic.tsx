@@ -96,7 +96,7 @@ export default function Statistic() {
               Your statistics
             </CustomText>
 
-            <View
+            {/* <View
               style={{
                 backgroundColor: '#FFE6A5',
                 borderRadius: 8,
@@ -112,7 +112,7 @@ export default function Statistic() {
               <CustomText fw="bold" fs={17}>
                 meditated
               </CustomText>
-            </View>
+            </View> */}
 
             <Row
               style={{

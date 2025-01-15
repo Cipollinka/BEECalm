@@ -20,7 +20,6 @@ export default function Main() {
   const moodIndex = useUserStore(
     state => state.moodIndexes[state.currentMood as Mood],
   );
-
   const isFirstTaskDone = useUserStore(state => state.isFirstTaskDone);
   const isSecondTaskDone = useUserStore(state => state.isSecondTaskDone);
 
@@ -59,9 +58,9 @@ export default function Main() {
     });
   };
 
-  const handleMeditationPress = () => {
-    nav.navigate(ScreenNames.MEDITATION, {key: currentMood});
-  };
+  // const handleMeditationPress = () => {
+  //   nav.navigate(ScreenNames.MEDITATION, {key: currentMood});
+  // };
 
   const Icon = currentMood ? data?.moodData?.Icon : null;
 
@@ -138,9 +137,9 @@ export default function Main() {
                 title={
                   isMeditationDisabled
                     ? 'Do your task firstly'
-                    : 'Start meditation'
+                    : 'Come back tomorrow!'
                 }
-                onPress={handleMeditationPress}
+                onPress={() => {}}
               />
             </View>
           </View>
